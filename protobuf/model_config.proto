@@ -1980,7 +1980,7 @@ message ModelConfig
     //@@
     //@@       TODO
     //@@
-    ModelFrequencyBatching frequency_batching = 17;
+    ModelFrequencyBatching frequency_batching = 25;
   }
 
   //@@  .. cpp:var:: ModelInstanceGroup instance_group (repeated)
