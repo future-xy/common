@@ -1178,14 +1178,7 @@ message ModelDynamicBatching
 //@@
 message ModelFrequencyBatching
 {
-  //@@  .. cpp:var:: int32 preferred_batch_size (repeated)
-  //@@
-  //@@     Preferred batch sizes for frequency batching. If a batch of one of
-  //@@     these sizes can be formed it will be executed immediately.  If
-  //@@     not specified a preferred batch size will be chosen automatically
-  //@@     based on model and GPU characteristics.
-  //@@
-  repeated int32 preferred_batch_size = 1;
+  uint64 optimal_batch_size = 1;
 
   //@@  .. cpp:var:: uint64 max_queue_delay_microseconds
   //@@
